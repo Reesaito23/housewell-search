@@ -12,16 +12,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  <!-- Tailwindcssの読み込み -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
 </head>
 <body>
   <header class="header">
     <img class="header__logo" src="assets/image/logo.png" alt="">
     <nav class="header__nav">
-      <ul class="header-nav__list">
+      <ul class="header-nav__list hidden md:block">
         <li><a href="">MENU</a></li>
         <li><a href="">MENU</a></li>
         <li><a href="">MENU</a></li>
       </ul>
+      <span class="md:hidden">
+        <img src="assets/image/menu.svg" alt="">
+      </span>
     </nav>
   </header>
   <!-- 

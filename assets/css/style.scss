@@ -1,3 +1,4 @@
+@import 'mixin';
 .fnc {
 
   // main variables, basically everything depends on $slidingAT
@@ -122,15 +123,22 @@
       overflow: hidden;
       z-index: 1;
       position: absolute;
-      right: $maskRight;
-      top: $maskTop;
-      width: $maskWidth;
-      height: $maskHeight;
+      left: 5%;
+      top: 35%;
+      width: 28.25vh;
+      height: 41vh;
       margin-right: $headingPadding * -3;
       // This line basically does all magic with masking effect. Very simple and elegant. Webkit only atm.
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 6vh 0, 6vh 61vh, 44vh 61vh, 44vh 6vh, 6vh 6vh);
+      // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 6vh 0, 6vh 61vh, 44vh 61vh, 44vh 6vh, 6vh 6vh);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 12% 0, 12% 91%, 87% 91%, 87% 9%, 9% 9%);
       transform-origin: 50% 0;
       transition-timing-function: $easing;
+      @include mq('desktop'){
+        width: $maskWidth;
+        height: $maskHeight; 
+        right: $maskRight;
+        top: $maskTop;
+      }
 
       .m--before-sliding & {
         transform: rotate($deg*-1) translate3d($xOffset, 0, 0);
@@ -183,8 +191,11 @@
     &__content {
       z-index: 2;
       position: absolute;
-      left: 20%;
+      left: 10%;
       bottom: 18%;
+      @include mq('desktop'){
+        left: 20%;
+      }
     }
 
     &__heading {
@@ -195,9 +206,12 @@
         overflow: hidden;
         position: relative;
         padding-right: 20px;
-        font-size: $headingFontSize;
+        font-size: 40px;
         color: #fff;
         word-spacing: 10px;
+        @include mq('desktop'){
+          font-size: $headingFontSize;
+        }
         .small{
           display: block;
           font-size: .5em;
@@ -205,9 +219,12 @@
         }
 
         &:nth-child(1){
-          font-size: 38px;
+          font-size: 18px;
           padding-left: .2em;
           font-family: 'Noto Sans JP',sans-serif;
+          @include mq('desktop'){
+            font-size: 38px;
+          }
         }
 
         &:nth-child(2) {
@@ -217,15 +234,19 @@
           font-family: 'Spartan-bold',sans-serif;
         }
         &:nth-child(3){
-          font-size: 72px;
+          font-size: 30px;
           font-family: 'AntroVectra', sans-serif;
           color: #E2FF00;
           position: absolute;
           transform-origin: right bottom;
-          right: -20%;
+          right: -10%;
           bottom: 0;
           white-space: nowrap;
           padding-bottom: .3em;
+          @include mq('desktop'){
+            font-size: 72px;
+            right: -20%;
+          }
         }
 
         .m--before-sliding & {
@@ -270,14 +291,18 @@
       position: absolute;
       left: 1em;
       bottom: 0;
-      font-size: 14px;
+      font-size: 12px;
       font-family: 'Barlow', sans-serif;
       color: #fff;
       writing-mode: vertical-rl;
       padding-right: 1em;
       border-right: 1px solid rgba($color: #FFFFFF, $alpha: 0.5);
-      height: 180px;
+      height: 120px;
       padding-top: .1em;
+      @include mq('desktop'){
+        font-size: 14px;
+        height: 180px;
+      }
     }
 
     &__action-btn {
@@ -581,7 +606,10 @@ body {
 
       .fnc-slide__inner,
       .fnc-slide__mask-inner {
-        background-image: url('../image/background-01.png');
+        background-image: url('../image/background-01--sp.png');
+        @include mq('desktop'){
+          background-image: url('../image/background-01.png');
+        }
       }
     }
 
@@ -589,7 +617,10 @@ body {
 
       .fnc-slide__inner,
       .fnc-slide__mask-inner {
-        background-image: url('../image/background-02.png');
+        background-image: url('../image/background-02--sp.png');
+        @include mq('desktop'){
+          background-image: url('../image/background-02.png');
+        }
       }
     }
 
@@ -597,7 +628,10 @@ body {
 
       .fnc-slide__inner,
       .fnc-slide__mask-inner {
-        background-image: url('../image/background-03.png');
+        background-image: url('../image/background-03--sp.png');
+        @include mq('desktop'){
+          background-image: url('../image/background-03.png');
+        }
       }
 
       .fnc-slide__inner:before {
@@ -615,7 +649,10 @@ body {
 
       .fnc-slide__inner,
       .fnc-slide__mask-inner {
-        background-image: url('../image/background-04.png');
+        background-image: url('../image/background-04--sp.png');
+        @include mq('desktop'){
+          background-image: url('../image/background-04.png');
+        }
       }
 
       .fnc-slide__inner:before {
@@ -632,7 +669,10 @@ body {
 
       .fnc-slide__inner,
       .fnc-slide__mask-inner {
-        background-image: url('../image/background-05.png');
+        background-image: url('../image/background-05--sp.png');
+        @include mq('desktop'){
+          background-image: url('../image/background-05.png');
+        }
       }
 
       .fnc-slide__inner:before {
