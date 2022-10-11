@@ -19,13 +19,13 @@
 <body>
   <header class="header">
     <img class="header__logo" src="assets/image/logo.png" alt="">
-    <nav class="header__nav">
-      <ul class="header-nav__list hidden md:flex">
+    <nav class="header__nav header-nav">
+      <ul class="header-nav__list">
         <li><a href="">MENU</a></li>
         <li><a href="">MENU</a></li>
         <li><a href="">MENU</a></li>
       </ul>
-      <span class="md:hidden">
+      <span class="md:hidden header-nav__icon--is-close">
         <img src="assets/image/menu.svg" alt="">
       </span>
     </nav>
@@ -226,5 +226,25 @@
     </div>
   </div>
   <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script>
+    const headerHeight = $('.header').outerHeight();
+    console.log(headerHeight)
+    const navClass = $('.header__nav');
+    const $SPheaderMenu_ClassName = $('.header__nav');
+    const SPheader_Active_ClassName = "is--active"
+    const windowWidth = $(window).width();
+    const widthPC = 768;
+
+    $(window).on('load', function () {
+      if (windowWidth< widthPC) {
+        $('.header-nav__list').css('padding-top', headerHeight);
+      }
+    });
+    $SPheaderMenu_ClassName.on('click', function () {
+        $(this).toggleClass(SPheader_Active_ClassName);
+      });
+  </script>
 </body>
 </html>

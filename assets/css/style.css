@@ -784,9 +784,36 @@ header {
 }
 
 .header-nav__list {
-  display: flex;
   color: #fff;
+  transform: translateX(100%);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+  z-index: -1;
+  text-align: center;
 }
-.header-nav__list > *:not(:first-child) {
-  margin-left: 10px;
+@media screen and (min-width: 768px) {
+  .header-nav__list {
+    transform: initial;
+    background-color: initial;
+    position: relative;
+    display: flex;
+  }
+  .header-nav__list > *:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+.header-nav__list li {
+  margin: 20px 0;
+}
+@media screen and (min-width: 768px) {
+  .header-nav__list li {
+    margin: 0;
+  }
+}
+.header-nav.is--active .header-nav__list {
+  transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */

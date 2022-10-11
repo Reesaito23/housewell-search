@@ -912,10 +912,35 @@ header{
 .header{
   &-nav{
     &__list{
-      display: flex;
       color: #fff;
-      >*:not(:first-child){
-        margin-left: 10px;
+      transform: translateX(100%);
+      width: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: all .3s;
+      z-index: -1;
+      text-align: center;
+      @include mq('desktop'){
+        transform: initial;
+        background-color: initial;
+        position: relative;
+        display: flex;
+        >*:not(:first-child){
+          margin-left: 10px;
+        }
+      }
+      li{
+        margin: 20px 0;
+        @include mq('desktop'){
+          margin: 0;
+        }
+      }
+    }
+    &.is--active{
+      .header-nav__list{
+        transform: translateX(0);
       }
     }
   }
