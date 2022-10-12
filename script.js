@@ -1,5 +1,5 @@
 (function() {
-
+  
   var $$ = function(selector, context) {
     var context = context || document;
     var elements = context.querySelectorAll(selector);

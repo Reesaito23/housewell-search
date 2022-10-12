@@ -230,8 +230,12 @@
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script>
     $(function () { });
-      $(document).ready(function () { });
-      $(window).on('load', function () { });
+      $(window).on('load', function () {
+          console.log("load");
+        });
+        $(document).ready(function () {
+          console.log("ready");
+        });
     const headerHeight = $('.header').outerHeight();
     console.log(headerHeight)
     const navClass = $('.header__nav');
