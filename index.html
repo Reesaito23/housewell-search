@@ -232,10 +232,10 @@
     $(function () { });
       $(window).on('load', function () {
           console.log("load");
+          $('body').css('display', 'block');
         });
         $(document).ready(function () {
           console.log("ready");
-          $('body').css('display', 'block');
         });
     const headerHeight = $('.header').outerHeight();
     console.log(headerHeight)
