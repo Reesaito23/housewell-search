@@ -439,7 +439,7 @@
 body {
   margin: 0;
   font-family: "Spartan", "Noto Sans JP", sans-serif;
-  opacity: 0;
+  display: none;
 }
 
 .demo-cont {
