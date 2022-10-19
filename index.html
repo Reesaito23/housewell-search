@@ -16,7 +16,7 @@
   <!-- Tailwindcssの読み込み -->
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body>
+<body style="display:none">
   <header class="header">
     <img class="header__logo" src="assets/image/logo.png" alt="">
     <nav class="header__nav header-nav">
@@ -229,16 +229,22 @@
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script>
-    $(function () { });
-      $(window).on('load', function () {
-          console.log("load");
-          $('body').css('display', 'block');
+    $(function () {
+      const imageNum = 5;
+      const sp = windowWidth < widthPC ? '--sp' : '';
+      const imgs = [];
+      let loadedNum = 0;
+      for (i = 1; i <= imageNum; i++) {
+        imgs[i] = document.createElement('img');
+        imgs[i].addEventListener('load', (e) => {
+          if (++loadedNum == imageNum) {
+            $('body').fadeIn(2000);
+          }
         });
-        $(document).ready(function () {
-          console.log("ready");
-        });
+        imgs[i].src = `assets/image/background-0${i}${sp}.png`;
+      }
+    });
     const headerHeight = $('.header').outerHeight();
-    console.log(headerHeight)
     const navClass = $('.header__nav');
     const $SPheaderMenu_ClassName = $('.header__nav');
     const SPheader_Active_ClassName = "is--active"
@@ -246,13 +252,13 @@
     const widthPC = 768;
 
     $(window).on('load', function () {
-      if (windowWidth< widthPC) {
+      if (windowWidth < widthPC) {
         $('.header-nav__list').css('padding-top', headerHeight);
       }
     });
     $SPheaderMenu_ClassName.on('click', function () {
-        $(this).toggleClass(SPheader_Active_ClassName);
-      });
+      $(this).toggleClass(SPheader_Active_ClassName);
+    });
   </script>
 </body>
 </html>
