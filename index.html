@@ -1,258 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ハウスウェル検索サイト</title>
-  <link rel="stylesheet" href="assets/css/destyle.css">
-  <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- font 読み込み NotoSans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハウスウェル検索サイト</title>
+    <link rel="stylesheet" href="assets/css/destyle.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Tailwindcssの読み込み -->
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-</head>
-<body>
-  <header class="header">
-    <img class="header__logo" src="assets/image/logo.png" alt="">
-    <nav class="header__nav header-nav">
-      <ul class="header-nav__list">
-        <li><a href="">MENU</a></li>
-        <li><a href="">MENU</a></li>
-        <li><a href="">MENU</a></li>
-      </ul>
-      <span class="md:hidden header-nav__icon--is-close">
-        <img src="assets/image/menu.svg" alt="">
-      </span>
-    </nav>
-  </header>
-  <!-- 
+    <!-- font 読み込み NotoSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Noto+Sans+JP&display=swap"
+      rel="stylesheet">
+
+    <!-- Tailwindcssの読み込み -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+
+  <body style="display:none">
+    <header class="header">
+      <img class="header__logo" src="assets/image/logo.png" alt="">
+      <nav class="header__nav header-nav">
+        <ul class="header-nav__list">
+          <li><a href="">MENU</a></li>
+          <li><a href="">MENU</a></li>
+          <li><a href="">MENU</a></li>
+        </ul>
+        <span class="md:hidden header-nav__icon--is-close">
+          <img src="assets/image/menu.svg" alt="">
+        </span>
+      </nav>
+    </header>
+    <!-- 
   Please note, that you can apply .m--global-blending-active to .fnc-slider 
   to enable blend-mode for all background-images or apply .m--blend-bg-active
   to some specific slides (.fnc-slide). It's disabled by default in this demo,
   because it requires specific images, where more than 50% of bg is transparent or monotone
   -->
-  <div class="demo-cont">
-    <!-- slider start -->
-    <div class="fnc-slider example-slider">
-      <div class="fnc-slider__slides">
-        <!-- slide start -->
-        <div class="fnc-slide m--blend-red m--active-slide">
-          <div class="fnc-slide__inner">
-            <div class="fnc-slide__mask">
-              <div class="fnc-slide__mask-inner"></div>
+    <div class="demo-cont">
+      <!-- slider start -->
+      <div class="fnc-slider example-slider">
+        <div class="fnc-slider__slides">
+          <!-- slide start -->
+          <div class="fnc-slide m--blend-red m--active-slide">
+            <div class="fnc-slide__inner">
+              <div class="fnc-slide__mask">
+                <div class="fnc-slide__mask-inner"></div>
+              </div>
+              <div class="fnc-slide__content">
+                <h2 class="fnc-slide__heading">
+                  <div class="fnc-slide__heading-line">
+                    <span>埼玉密着18年住まい探しは</span>
+                  </div>
+                  <div class="fnc-slide__heading-line">
+                    <span>HOUSEWELL</span>
+                  </div>
+                  <div class="fnc-slide__heading-line">
+                    <span>Our Message</span>
+                  </div>
+                </h2>
+              </div>
+              <p class="fnc-slide__scroll">
+                SCROLL DOWN
+              </p>
             </div>
-            <div class="fnc-slide__content">
-              <h2 class="fnc-slide__heading">
-                <div class="fnc-slide__heading-line">
-                  <span>埼玉密着18年住まい探しは</span>
-                </div>
-                <div class="fnc-slide__heading-line">
-                  <span>HOUSEWELL</span>
-                </div>
-                <div class="fnc-slide__heading-line">
-                  <span>Our Message</span>
-                </div>
-              </h2>
-            </div>
-            <p class="fnc-slide__scroll">
-              SCROLL DOWN
-            </p>
           </div>
-        </div>
-        <!-- slide end -->
-        <!-- slide start -->
-        <div class="fnc-slide m--blend-green">
-          <div class="fnc-slide__inner">
-            <div class="fnc-slide__mask">
-              <div class="fnc-slide__mask-inner"></div>
+          <!-- slide end -->
+          <!-- slide start -->
+          <div class="fnc-slide m--blend-green">
+            <div class="fnc-slide__inner">
+              <div class="fnc-slide__mask">
+                <div class="fnc-slide__mask-inner"></div>
+              </div>
+              <div class="fnc-slide__content">
+                <h2 class="fnc-slide__heading">
+                  <div class="fnc-slide__heading-line">
+                    <span>埼玉県内を中心に物件を紹介</span>
+                  </div>
+                  <div class="fnc-slide__heading-line">
+                    <span>SOLUTION</span>
+                  </div>
+                  <div class="fnc-slide__heading-line">
+                    <span>Our Message</span>
+                  </div>
+                </h2>
+              </div>
+              <p class="fnc-slide__scroll">
+                SCROLL DOWN
+              </p>
             </div>
-            <div class="fnc-slide__content">
-              <h2 class="fnc-slide__heading">
-                <div class="fnc-slide__heading-line">
-                  <span>埼玉県内を中心に物件を紹介</span>
-                </div>
-                <div class="fnc-slide__heading-line">
-                  <span>SOLUTION</span>
-                </div>
-                <div class="fnc-slide__heading-line">
-                  <span>Our Message</span>
-                </div>
-              </h2>
-            </div>
-            <p class="fnc-slide__scroll">
-              SCROLL DOWN
-            </p>
           </div>
-        </div>
-        <!-- slide end -->
-        <!-- slide start -->
-        <div class="fnc-slide m--blend-brown">
-          <div class="fnc-slide__inner">
-            <div class="fnc-slide__mask">
-              <div class="fnc-slide__mask-inner"></div>
+          <!-- slide end -->
+          <!-- slide start -->
+          <div class="fnc-slide m--blend-brown">
+            <div class="fnc-slide__inner">
+              <div class="fnc-slide__mask">
+                <div class="fnc-slide__mask-inner"></div>
+              </div>
+              <div class="fnc-slide__content">
+                <h2 class="fnc-slide__heading">
+                  <div class="fnc-slide__heading-line">
+                    <span>おかげさまで7年連続No1</span>
+                    <span class="small">（2015〜2021年 中古物件契約数 Century21グループ内）</span>
+                  </div>
+                  <div class="fnc-slide__heading-line">
+                    <span>Achievements</span>
+                  </div>
+                  <div class="fnc-slide__heading-line">
+                    <span>Our Message</span>
+                  </div>
+                </h2>
+              </div>
+              <p class="fnc-slide__scroll">
+                SCROLL DOWN
+              </p>
             </div>
-            <div class="fnc-slide__content">
-              <h2 class="fnc-slide__heading">
-                <div class="fnc-slide__heading-line">
-                  <span>おかげさまで7年連続No1</span>
-                  <span class="small">（2015〜2021年 中古物件契約数 Century21グループ内）</span>
-                </div>
-                <div class="fnc-slide__heading-line">
-                  <span>Achievements</span>
-                </div>
-                <div class="fnc-slide__heading-line">
-                  <span>Our Message</span>
-                </div>
-              </h2>
-            </div>
-            <p class="fnc-slide__scroll">
-              SCROLL DOWN
-            </p>
           </div>
-        </div>
-        <!-- slide end -->
-        <!-- slide start -->
-        <div class="fnc-slide m--blend-brown">
-          <div class="fnc-slide__inner">
-            <div class="fnc-slide__mask">
-              <div class="fnc-slide__mask-inner"></div>
+          <!-- slide end -->
+          <!-- slide start -->
+          <div class="fnc-slide m--blend-brown">
+            <div class="fnc-slide__inner">
+              <div class="fnc-slide__mask">
+                <div class="fnc-slide__mask-inner"></div>
+              </div>
+              <div class="fnc-slide__content">
+                <h2 class="fnc-slide__heading">
+                  <div class="fnc-slide__heading-line">
+                    <span>FP有資格者による返済計画相談まで</span>
+                  </div>
+                  <div class="fnc-slide__heading-line">
+                    <span>PLANNING</span>
+                  </div>
+                  <div class="fnc-slide__heading-line">
+                    <span>Our Message</span>
+                  </div>
+                </h2>
+              </div>
+              <p class="fnc-slide__scroll">
+                SCROLL DOWN
+              </p>
             </div>
-            <div class="fnc-slide__content">
-              <h2 class="fnc-slide__heading">
-                <div class="fnc-slide__heading-line">
-                  <span>FP有資格者による返済計画相談まで</span>
-                </div>
-                <div class="fnc-slide__heading-line">
-                  <span>PLANNING</span>
-                </div>
-                <div class="fnc-slide__heading-line">
-                  <span>Our Message</span>
-                </div>
-              </h2>
-            </div>
-            <p class="fnc-slide__scroll">
-              SCROLL DOWN
-            </p>
           </div>
-        </div>
-        <!-- slide end -->
-        <!-- slide start -->
-        <div class="fnc-slide m--blend-dark">
-          <div class="fnc-slide__inner">
-            <div class="fnc-slide__mask">
-              <div class="fnc-slide__mask-inner"></div>
+          <!-- slide end -->
+          <!-- slide start -->
+          <div class="fnc-slide m--blend-dark">
+            <div class="fnc-slide__inner">
+              <div class="fnc-slide__mask">
+                <div class="fnc-slide__mask-inner"></div>
+              </div>
+              <div class="fnc-slide__content">
+                <h2 class="fnc-slide__heading">
+                  <div class="fnc-slide__heading-line">
+                    <span>自社ショールームでのリフォーム建築相談</span>
+                  </div>
+                  <div class="fnc-slide__heading-line">
+                    <span>REFORM</span>
+                  </div>
+                  <div class="fnc-slide__heading-line">
+                    <span>Our Message</span>
+                  </div>
+                </h2>
+              </div>
+              <p class="fnc-slide__scroll">
+                SCROLL DOWN
+              </p>
             </div>
-            <div class="fnc-slide__content">
-              <h2 class="fnc-slide__heading">
-                <div class="fnc-slide__heading-line">
-                  <span>自社ショールームでのリフォーム建築相談</span>
-                </div>
-                <div class="fnc-slide__heading-line">
-                  <span>REFORM</span>
-                </div>
-                <div class="fnc-slide__heading-line">
-                  <span>Our Message</span>
-                </div>
-              </h2>
-            </div>
-            <p class="fnc-slide__scroll">
-              SCROLL DOWN
-            </p>
           </div>
+          <!-- slide end -->
         </div>
-        <!-- slide end -->
+        <nav class="fnc-nav">
+          <div class="fnc-nav__bgs">
+            <div class="fnc-nav__bg m--navbg-black m--active-nav-bg"></div>
+            <div class="fnc-nav__bg m--navbg-black"></div>
+            <div class="fnc-nav__bg m--navbg-black"></div>
+            <div class="fnc-nav__bg m--navbg-black"></div>
+            <div class="fnc-nav__bg m--navbg-black"></div>
+          </div>
+          <div class="fnc-nav__controls">
+            <button class="fnc-nav__control">
+              01
+              <span class="fnc-nav__control-progress"></span>
+            </button>
+            <button class="fnc-nav__control">
+              02
+              <span class="fnc-nav__control-progress"></span>
+            </button>
+            <button class="fnc-nav__control">
+              03
+              <span class="fnc-nav__control-progress"></span>
+            </button>
+            <button class="fnc-nav__control">
+              04
+              <span class="fnc-nav__control-progress"></span>
+            </button>
+            <button class="fnc-nav__control">
+              05
+              <span class="fnc-nav__control-progress"></span>
+            </button>
+          </div>
+        </nav>
       </div>
-      <nav class="fnc-nav">
-        <div class="fnc-nav__bgs">
-          <div class="fnc-nav__bg m--navbg-black m--active-nav-bg"></div>
-          <div class="fnc-nav__bg m--navbg-black"></div>
-          <div class="fnc-nav__bg m--navbg-black"></div>
-          <div class="fnc-nav__bg m--navbg-black"></div>
-          <div class="fnc-nav__bg m--navbg-black"></div>
+      <!-- slider end -->
+      <div class="demo-cont__credits">
+        <div class="demo-cont__credits-close"></div>
+        <h2 class="demo-cont__credits-heading">Made by</h2>
+        <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt=""
+          class="demo-cont__credits-img" />
+        <h3 class="demo-cont__credits-name">Nikolay Talanov</h3>
+        <a href="https://codepen.io/suez/" target="_blank" class="demo-cont__credits-link">My codepen</a>
+        <a href="https://twitter.com/NikolayTalanov" target="_blank" class="demo-cont__credits-link">My twitter</a>
+        <h2 class="demo-cont__credits-heading">Based on</h2>
+        <a href="https://dribbble.com/shots/2375246-Fashion-Butique-slider-animation" target="_blank"
+          class="demo-cont__credits-link">Concept by Kreativa Studio</a>
+        <h4 class="demo-cont__credits-blend">Global Blend Mode</h4>
+        <div class="colorful-switch">
+          <input type="checkbox" class="colorful-switch__checkbox js-activate-global-blending"
+            id="colorful-switch-cb" />
+          <label class="colorful-switch__label" for="colorful-switch-cb">
+            <span class="colorful-switch__bg"></span>
+            <span class="colorful-switch__dot"></span>
+            <span class="colorful-switch__on">
+              <span class="colorful-switch__on__inner"></span>
+            </span>
+            <span class="colorful-switch__off"></span>
+          </label>
         </div>
-        <div class="fnc-nav__controls">
-          <button class="fnc-nav__control">
-            01
-            <span class="fnc-nav__control-progress"></span>
-          </button>
-          <button class="fnc-nav__control">
-            02
-            <span class="fnc-nav__control-progress"></span>
-          </button>
-          <button class="fnc-nav__control">
-            03
-            <span class="fnc-nav__control-progress"></span>
-          </button>
-          <button class="fnc-nav__control">
-            04
-            <span class="fnc-nav__control-progress"></span>
-          </button>
-          <button class="fnc-nav__control">
-            05
-            <span class="fnc-nav__control-progress"></span>
-          </button>
-        </div>
-      </nav>
-    </div>
-    <!-- slider end -->
-    <div class="demo-cont__credits">
-      <div class="demo-cont__credits-close"></div>
-      <h2 class="demo-cont__credits-heading">Made by</h2>
-      <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt=""
-        class="demo-cont__credits-img" />
-      <h3 class="demo-cont__credits-name">Nikolay Talanov</h3>
-      <a href="https://codepen.io/suez/" target="_blank" class="demo-cont__credits-link">My codepen</a>
-      <a href="https://twitter.com/NikolayTalanov" target="_blank" class="demo-cont__credits-link">My twitter</a>
-      <h2 class="demo-cont__credits-heading">Based on</h2>
-      <a href="https://dribbble.com/shots/2375246-Fashion-Butique-slider-animation" target="_blank"
-        class="demo-cont__credits-link">Concept by Kreativa Studio</a>
-      <h4 class="demo-cont__credits-blend">Global Blend Mode</h4>
-      <div class="colorful-switch">
-        <input type="checkbox" class="colorful-switch__checkbox js-activate-global-blending" id="colorful-switch-cb" />
-        <label class="colorful-switch__label" for="colorful-switch-cb">
-          <span class="colorful-switch__bg"></span>
-          <span class="colorful-switch__dot"></span>
-          <span class="colorful-switch__on">
-            <span class="colorful-switch__on__inner"></span>
-          </span>
-          <span class="colorful-switch__off"></span>
-        </label>
       </div>
     </div>
-  </div>
-  <script src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script>
-    $(function () { });
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      const headerHeight = $('.header').outerHeight();
+      const navClass = $('.header__nav');
+      const $SPheaderMenu_ClassName = $('.header__nav');
+      const SPheader_Active_ClassName = "is--active"
+      const windowWidth = $(window).width();
+      const widthPC = 768;
+      
       $(window).on('load', function () {
-          console.log("load");
-          $('body').css('display', 'block');
-        });
-        $(document).ready(function () {
-          console.log("ready");
-        });
-    const headerHeight = $('.header').outerHeight();
-    console.log(headerHeight)
-    const navClass = $('.header__nav');
-    const $SPheaderMenu_ClassName = $('.header__nav');
-    const SPheader_Active_ClassName = "is--active"
-    const windowWidth = $(window).width();
-    const widthPC = 768;
-
-    $(window).on('load', function () {
-      if (windowWidth< widthPC) {
-        $('.header-nav__list').css('padding-top', headerHeight);
-      }
-    });
-    $SPheaderMenu_ClassName.on('click', function () {
+        if (windowWidth < widthPC) {
+          $('.header-nav__list').css('padding-top', headerHeight);
+        }
+      });
+      $SPheaderMenu_ClassName.on('click', function () {
         $(this).toggleClass(SPheader_Active_ClassName);
       });
-  </script>
-</body>
+      
+      $(function () {
+        const imageNum = 5;
+        const sp = windowWidth < widthPC ? '--sp' : '';
+        const imgs = [];
+        let loadedNum = 0;
+        for (i = 1; i <= imageNum; i++) {
+          imgs[i] = document.createElement('img');
+          imgs[i].addEventListener('load', (e) => {
+            if (++loadedNum == imageNum) {
+              $('body').fadeIn(2000);
+            }
+          });
+          imgs[i].src = `assets/image/background-0${i}${sp}.png`;
+        }
+      });
+      </script>
+  </body>
+
 </html>
